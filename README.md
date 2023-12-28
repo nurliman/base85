@@ -2,7 +2,7 @@
 
 ## Description
 
-`@nurliman/base85` is a Base85 encoder and decoder.
+`@nurliman/base85` is a Base85 encoder and decoder that compatible for Node.js and browser.
 
 ## Installation
 
@@ -39,7 +39,6 @@ const { encodeBase85, decodeBase85 } = require("@nurliman/base85");
 
 const encoded = encodeBase85("your string");
 const decoded = decodeBase85(encoded);
-
 ```
 
 Please replace `'your string'` with the string you want to encode and decode.
