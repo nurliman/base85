@@ -23,8 +23,8 @@ export type EncodeOptions = {
  */
 export const encodeBase85 = (input: string, { wrap = true }: EncodeOptions = {}): string => {
   const paddingLength = input.length % 4 || 4;
-  const padding = "\x00\x00\x00\x00".slice(paddingLength);
-  input += padding;
+  const paddingCharacters = "\x00\x00\x00\x00".slice(paddingLength);
+  input += paddingCharacters;
 
   const encodedArray = [];
 
@@ -49,8 +49,8 @@ export const encodeBase85 = (input: string, { wrap = true }: EncodeOptions = {})
   }
 
   // Remove padding from the end of the encoded array
-  for (let i = padding.length; i > 0; i--) {
-    encodedArray.pop();
+  if (paddingCharacters.length > 0) {
+    encodedArray.splice(-paddingCharacters.length);
   }
 
   const encodedString = String.fromCharCode(...encodedArray);

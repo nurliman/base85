@@ -50,8 +50,8 @@ export const decodeBase85 = (input: string): string => {
   }
 
   // Remove the padding bytes from the end of the array
-  for (let charsLen = paddingCharacters.length; charsLen > 0; charsLen--) {
-    decodedBytes.pop();
+  if (paddingCharacters.length > 0) {
+    decodedBytes.splice(-paddingCharacters.length);
   }
 
   // Convert the array of decoded bytes to a string and return it

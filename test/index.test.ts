@@ -2,6 +2,8 @@ import { expect, test } from "vitest";
 import base85 from "@/index";
 
 const testlist = [
+  ["", "<~~>"],
+  [" ", "<~+9~>"],
   ["a", "<~@/~>"],
   ["aa", "<~@:9~>"],
   ["aaa", "<~@:<R~>"],
@@ -19,6 +21,8 @@ const testlist = [
 ];
 
 const testlistUnwrapped = [
+  ["", ""],
+  [" ", "+9"],
   ["a", "@/"],
   ["aa", "@:9"],
   ["aaa", "@:<R"],
