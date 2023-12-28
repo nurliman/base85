@@ -40,7 +40,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup",
+    "build": "npm run test && tsup",
     "test": "vitest",
     "format": "npm run the-prettier -- .",
     "lint": "npm run format && npm run the-eslint -- .",
@@ -49,7 +49,7 @@
     "lint-staged": "lint-staged",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "changeset publish"
+    "release": "npm run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
