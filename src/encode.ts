@@ -22,6 +22,8 @@ export type EncodeOptions = {
  * // output: 87cURD]i,"Ebo80
  */
 export const encodeBase85 = (input: string, { wrap = true }: EncodeOptions = {}): string => {
+  if (!input) return wrap ? "<~~>" : "";
+
   const paddingLength = input.length % 4 || 4;
   const paddingCharacters = "\x00\x00\x00\x00".slice(paddingLength);
   input += paddingCharacters;

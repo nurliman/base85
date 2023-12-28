@@ -19,6 +19,8 @@ export const decodeBase85 = (input: string): string => {
   // Check if input string is wrapped with "<~" and "~>", remove them if true
   input = input.replace(/^<~/g, "").replace(/~>$/g, "");
 
+  if (!input) return "";
+
   // Remove all whitespace characters and replace "z" with "!!!!!"
   input = input.replace(/\s/g, "").replace("z", "!!!!!");
 
