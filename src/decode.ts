@@ -1,4 +1,16 @@
-export const decodeBase85 = (input: string) => {
+/**
+ * Decodes a string from ASCII85
+ * @example
+ * import base85 from "@nurliman/base85";
+ *
+ * base85.decode('<~87cURD]i,"Ebo80~>');
+ * // output: Hello World!
+ *
+ * // it also works without the wrapping characters
+ * base85.decode('87cURD]i,"Ebo80');
+ * // output: Hello World!
+ */
+export const decodeBase85 = (input: string): string => {
   // Define constants and variables
   const ASCII_OFFSET = 33;
   const BASE85_BLOCK_SIZE = 5;

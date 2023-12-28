@@ -1,4 +1,27 @@
-export const encodeBase85 = (input: string) => {
+export type EncodeOptions = {
+  /**
+   * If true, the encoded string will be wrapped in `<~` and `~>`.
+   * @default true
+   */
+  wrap?: boolean;
+};
+
+/**
+ * Encodes a string to ASCII85
+ * @param input The string to encode
+ * @param options Options for encoding
+ * @returns The encoded string
+ * @example
+ *
+ * import base85 from "@nurliman/base85";
+ *
+ * base85.encode("Hello World!");
+ * // output: <~87cURD]i,"Ebo80~>
+ *
+ * base85.encode("Hello World!", { wrap: false });
+ * // output: 87cURD]i,"Ebo80
+ */
+export const encodeBase85 = (input: string, { wrap = true }: EncodeOptions = {}): string => {
   const paddingLength = input.length % 4 || 4;
   const padding = "\x00\x00\x00\x00".slice(paddingLength);
   input += padding;
@@ -30,5 +53,8 @@ export const encodeBase85 = (input: string) => {
     encodedArray.pop();
   }
 
-  return "<~" + String.fromCharCode(...encodedArray) + "~>";
+  const encodedString = String.fromCharCode(...encodedArray);
+  const output = wrap ? `<~${encodedString}~>` : encodedString;
+
+  return output;
 };
