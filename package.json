@@ -24,7 +24,9 @@
     "encoder",
     "decoder",
     "encode",
-    "decode"
+    "decode",
+    "browser",
+    "node"
   ],
   "files": [
     "dist/"
