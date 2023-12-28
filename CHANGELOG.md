@@ -1,5 +1,14 @@
 # @nurliman/base85
 
+## 1.0.1
+
+### Patch Changes
+
+- 43a394b: Refactor base85 encoding and decoding
+- 5b22ad6: Update target to es5 in tsup.config.ts
+- cd053c2: Refactor input string handling in decodeBase85 function
+- 6c48a91: Add input validation and handling for empty input strings
+
 ## 1.0.0
 
 ### Major Changes
