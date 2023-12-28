@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2/schema.json",
+  "baseBranch": "main",
+  "changelog": ["@changesets/changelog-github", { "repo": "nurliman/base85" }],
+  "commit": false,
+  "fixed": [],
+  "linked": [],
+  "access": "public",
+  "updateInternalDependencies": "patch"
+}

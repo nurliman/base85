@@ -1,0 +1,77 @@
+{
+  "name": "@nurliman/base85",
+  "description": "Base85 encoder and decoder",
+  "version": "0.0.0",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nurliman Diara",
+    "email": "nurlimandiara@gmail.com",
+    "url": "https://nurliman.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nurliman/base85.git"
+  },
+  "keywords": [
+    "ascii",
+    "base85",
+    "ascii85",
+    "z85",
+    "encoder",
+    "decoder",
+    "encode",
+    "decode"
+  ],
+  "files": [
+    "dist/"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "format": "npm run the-prettier -- .",
+    "lint": "npm run format && npm run the-eslint -- .",
+    "the-eslint": "eslint --cache --fix",
+    "the-prettier": "prettier -w --ignore-path ./.gitignore --ignore-path ./.prettierignore",
+    "lint-staged": "lint-staged",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "@swc/core": "^1.3.101",
+    "@tsconfig/recommended": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "lefthook": "^1.5.5",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "unplugin-swc": "^1.4.4",
+    "vite": "^5.0.10",
+    "vite-tsconfig-paths": "^4.2.2",
+    "vitest": "^1.1.0"
+  },
+  "packageManager": "pnpm@8.13.1",
+  "lint-staged": {
+    "**/*.+(js|mjs|cjs|jsx|ts|cts|mts|tsx)": "npm run the-eslint",
+    "**/*.+(js|mjs|cjs|jsx|ts|cts|mts|tsx|css|scss|json|yml|yaml)": "npm run the-prettier"
+  }
+}
