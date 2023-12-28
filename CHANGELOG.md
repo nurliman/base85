@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 1.0.0
+
+### Major Changes
+
+- 7baf288: feat: Add EncodeOptions to encodeBase85 function
+
 ## 0.1.2
 
 ### Patch Changes
