@@ -43,7 +43,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "test": "vitest",
+    "test": "vitest run",
     "format": "npm run the-prettier -- .",
     "lint": "npm run format && npm run the-eslint -- .",
     "the-eslint": "eslint --cache --fix",
