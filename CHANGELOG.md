@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 1.0.2
+
+### Patch Changes
+
+- 83bc4d2: Update dependencies
+
 ## 1.0.1
 
 ### Patch Changes
