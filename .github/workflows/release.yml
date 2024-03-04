@@ -16,9 +16,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Use PNPM v8
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
           version: 8
+          run_install: false
 
       - name: Setup Node.js 20.x
         uses: actions/setup-node@v4
