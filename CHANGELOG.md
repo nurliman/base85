@@ -1,5 +1,13 @@
 # @nurliman/base85
 
+## 1.0.3
+
+### Patch Changes
+
+- 0efb247: Update pnpm action version
+- 3b2f988: Update JSDoc options for encoding
+- ebc9f7e: Update lefthook version to 1.6.4
+
 ## 1.0.2
 
 ### Patch Changes
