@@ -9,7 +9,8 @@ export type EncodeOptions = {
 /**
  * Encodes a string to ASCII85
  * @param input The string to encode
- * @param options Options for encoding
+ * @param {Object} options Options for encoding
+ * @param {boolean} [options.wrap=true] If true, the encoded string will be wrapped in `<~` and `~>`. default is `true`
  * @returns The encoded string
  * @example
  *
