@@ -1,5 +1,5 @@
-import { encodeBase85 } from "./encode";
 import { decodeBase85 } from "./decode";
+import { encodeBase85 } from "./encode";
 export type * from "./encode";
 export { encodeBase85, decodeBase85 };
 
