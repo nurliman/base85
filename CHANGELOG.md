@@ -1,5 +1,17 @@
 # @nurliman/base85
 
+## 1.0.5
+
+### Patch Changes
+
+- [`f7196a6`](https://github.com/nurliman/base85/commit/f7196a6c6ad42bb19de517990f8d7d2ce215a08e) Thanks [@nurliman](https://github.com/nurliman)! - using `biome` instead of `prettier`, `eslint`
+
+- [`a0ab750`](https://github.com/nurliman/base85/commit/a0ab75076c600f8387f5a396a96dd58e14a3db97) Thanks [@nurliman](https://github.com/nurliman)! - update `vite` to `v5.1.6`
+
+- [`e9ea1f4`](https://github.com/nurliman/base85/commit/e9ea1f4170a812ad663bf3d99b0c851f2abbec3b) Thanks [@nurliman](https://github.com/nurliman)! - Update changelog to use @changesets/changelog-github
+
+- [`216d12f`](https://github.com/nurliman/base85/commit/216d12f5262077681d8d8306533df3517f0445dc) Thanks [@nurliman](https://github.com/nurliman)! - format
+
 ## 1.0.4
 
 ### Patch Changes
