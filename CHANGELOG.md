@@ -1,5 +1,12 @@
 # @nurliman/base85
 
+## 1.0.4
+
+### Patch Changes
+
+- 4734fe2: add `LICENSE` file
+- 6b15511: update dependencies
+
 ## 1.0.3
 
 ### Patch Changes
