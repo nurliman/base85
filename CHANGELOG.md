@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 1.0.6
+
+### Patch Changes
+
+- [`e5d319d`](https://github.com/nurliman/base85/commit/e5d319df7bbb001812e2fef24e1d1bb5519852eb) Thanks [@nurliman](https://github.com/nurliman)! - update dependencies
+
 ## 1.0.5
 
 ### Patch Changes
