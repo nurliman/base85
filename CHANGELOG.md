@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 1.0.9
+
+### Patch Changes
+
+- [`c9b8a81`](https://github.com/nurliman/base85/commit/c9b8a812d5209423a07bf5dad0609e211a6fe0dc) Thanks [@nurliman](https://github.com/nurliman)! - update dependencies
+
 ## 1.0.8
 
 ### Patch Changes
