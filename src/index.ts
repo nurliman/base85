@@ -1,6 +1,6 @@
-import { decodeBase85 } from "./decode";
-import { encodeBase85 } from "./encode";
-export type * from "./encode";
+import { decodeBase85 } from "./decode.ts";
+import { encodeBase85 } from "./encode.ts";
+export type * from "./encode.ts";
 export { encodeBase85, decodeBase85 };
 
 const base85 = {

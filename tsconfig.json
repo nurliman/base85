@@ -4,6 +4,8 @@
     "target": "ES6",
     "module": "ES2022",
     "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"]
