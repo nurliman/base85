@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 2.0.4
+
+### Patch Changes
+
+- [`364d0b3`](https://github.com/nurliman/base85/commit/364d0b3c3f7ab8382457f1bb61cebb6a4eb285f7) Thanks [@nurliman](https://github.com/nurliman)! - Update release workflow to seperate job for publish to jsr
+
 ## 2.0.3
 
 ### Patch Changes
