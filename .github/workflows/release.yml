@@ -61,4 +61,4 @@ jobs:
 
       - name: Publish to JSR
         if: steps.changesets.outputs.published == 'true'
-        run: pnpm dlx jsr publish
+        run: pnpm dlx jsr publish --allow-dirty
