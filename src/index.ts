@@ -79,7 +79,9 @@ export { encodeBase85, decodeBase85 };
 /**
  * Base85 encoder and decoder
  */
-export default {
+const base85 = {
   encode: encodeBase85,
   decode: decodeBase85,
 };
+
+export default base85;
