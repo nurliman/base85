@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 2.0.6
+
+### Patch Changes
+
+- [`b14e883`](https://github.com/nurliman/base85/commit/b14e883b2f72e4e1c31bfd372748ab881ea4c2e7) Thanks [@nurliman](https://github.com/nurliman)! - fix docs
+
 ## 2.0.5
 
 ### Patch Changes
