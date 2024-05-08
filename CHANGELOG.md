@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 2.0.1
+
+### Patch Changes
+
+- [`6c8eaf1`](https://github.com/nurliman/base85/commit/6c8eaf10d767459f457f8cc9a629477b04bc507e) Thanks [@nurliman](https://github.com/nurliman)! - Update permissions in release workflow
+
 ## 2.0.0
 
 ### Major Changes
