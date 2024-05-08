@@ -1,5 +1,23 @@
 # @nurliman/base85
 
+## 2.0.0
+
+### Major Changes
+
+- [`2e8542f`](https://github.com/nurliman/base85/commit/2e8542f55bbb1894eec1e3f1a0df770b2a9d94a2) Thanks [@nurliman](https://github.com/nurliman)! - update target to es6
+
+### Minor Changes
+
+- [`7dadef3`](https://github.com/nurliman/base85/commit/7dadef3a50583b89944d770b22af0dd73e6959fe) Thanks [@nurliman](https://github.com/nurliman)! - support deno package and jsr
+
+### Patch Changes
+
+- [`bf6e350`](https://github.com/nurliman/base85/commit/bf6e350c2fbc5fa107ee705904d06bbceb2e7979) Thanks [@nurliman](https://github.com/nurliman)! - Update pnpm to version 9 and cache pnpm store in github action
+
+- [`a3263f0`](https://github.com/nurliman/base85/commit/a3263f0b2a41fc6ae7853825edd8958a07076eba) Thanks [@nurliman](https://github.com/nurliman)! - update dependencies
+
+- [`32e54f7`](https://github.com/nurliman/base85/commit/32e54f79404cd403b0ab3e1afbbbeff00810bae9) Thanks [@nurliman](https://github.com/nurliman)! - update import paths to use .ts file extensions
+
 ## 1.0.9
 
 ### Patch Changes
