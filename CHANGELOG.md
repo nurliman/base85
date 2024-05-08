@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 2.0.7
+
+### Patch Changes
+
+- [`f3fd750`](https://github.com/nurliman/base85/commit/f3fd750c618f6ead1ca717bb5700f71c05f4e361) Thanks [@nurliman](https://github.com/nurliman)! - yet another fix for docs
+
 ## 2.0.6
 
 ### Patch Changes
