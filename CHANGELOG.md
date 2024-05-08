@@ -1,5 +1,13 @@
 # @nurliman/base85
 
+## 2.0.3
+
+### Patch Changes
+
+- [`72e0487`](https://github.com/nurliman/base85/commit/72e048730453d30f77c4305fa550f3e0526cb236) Thanks [@nurliman](https://github.com/nurliman)! - drop swc
+
+- [`ab0f49c`](https://github.com/nurliman/base85/commit/ab0f49c983bcf478899e46c17612ed8337a13ef7) Thanks [@nurliman](https://github.com/nurliman)! - drop typescript alias import
+
 ## 2.0.2
 
 ### Patch Changes
