@@ -1,5 +1,15 @@
 # @nurliman/base85
 
+## 2.0.5
+
+### Patch Changes
+
+- [`b1fb7d6`](https://github.com/nurliman/base85/commit/b1fb7d6cf99b0a1bb22187332df67b6be99e4e8c) Thanks [@nurliman](https://github.com/nurliman)! - add missing docs
+
+- [`cb1be3f`](https://github.com/nurliman/base85/commit/cb1be3fcce111af29013bf3badf08e442647ce8a) Thanks [@nurliman](https://github.com/nurliman)! - Refactor base85 encoding and decoding functions to use function declarations
+
+- [`7d1c9ad`](https://github.com/nurliman/base85/commit/7d1c9adbcafe33af66a4cad74c2d4246f13eba59) Thanks [@nurliman](https://github.com/nurliman)! - Update README.md with badges and npm version
+
 ## 2.0.4
 
 ### Patch Changes
