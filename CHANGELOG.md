@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 2.0.2
+
+### Patch Changes
+
+- [`d68ba6c`](https://github.com/nurliman/base85/commit/d68ba6c3c2b932b785e2ab4ae41b09ded0137717) Thanks [@nurliman](https://github.com/nurliman)! - Update release workflow to allow dirty publish
+
 ## 2.0.1
 
 ### Patch Changes
