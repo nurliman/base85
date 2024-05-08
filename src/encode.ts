@@ -1,3 +1,6 @@
+/**
+ * `EncodeOptions` is an object that can be passed to the encode function to customize its behavior.
+ */
 export type EncodeOptions = {
   /**
    * If true, the encoded string will be wrapped in `<~` and `~>`.
@@ -12,8 +15,8 @@ export type EncodeOptions = {
  * @param {Object} options Options for encoding
  * @param {boolean} [options.wrap=true] If true, the encoded string will be wrapped in `<~` and `~>`. default is `true`
  * @returns The encoded string
- * @example
  *
+ * ```ts
  * import base85 from "@nurliman/base85";
  *
  * base85.encode("Hello World!");
@@ -21,6 +24,7 @@ export type EncodeOptions = {
  *
  * base85.encode("Hello World!", { wrap: false });
  * // output: 87cURD]i,"Ebo80
+ * ```
  */
 export function encodeBase85(input: string, { wrap = true }: EncodeOptions = {}): string {
   if (!input) return wrap ? "<~~>" : "";

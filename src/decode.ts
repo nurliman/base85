@@ -1,6 +1,7 @@
 /**
  * Decodes a string from ASCII85
- * @example
+ *
+ * ```ts
  * import base85 from "@nurliman/base85";
  *
  * base85.decode('<~87cURD]i,"Ebo80~>');
@@ -9,6 +10,7 @@
  * // it also works without the wrapping characters
  * base85.decode('87cURD]i,"Ebo80');
  * // output: Hello World!
+ * ```
  */
 export function decodeBase85(input: string): string {
   // Define constants and variables
