@@ -1,5 +1,9 @@
 # @nurliman/base85
 
+[![jsr.io/@nurliman/base85](https://jsr.io/badges/@nurliman/base85)](https://jsr.io/@nurliman/base85)
+[![jsr.io/@nurliman/base85 score](https://jsr.io/badges/@nurliman/base85/score)](https://jsr.io/@nurliman/base85)
+[![npm Version](https://img.shields.io/npm/v/%40nurliman%2Fbase85)](https://www.npmjs.com/package/@nurliman/base85)
+
 ## Description
 
 `@nurliman/base85` is a Base85 encoder and decoder that compatible for Node.js and browser.
