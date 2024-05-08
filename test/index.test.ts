@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
-import base85 from "@/index";
 import { expect, test } from "vitest";
+import base85 from "../src/index.ts";
 
 const [loremIpsumBase85, loremIpsum] = await Promise.all([
   fs.readFile("test/loremipsum.base85.txt", "utf8"),
