@@ -10,7 +10,7 @@
  * base85.decode('87cURD]i,"Ebo80');
  * // output: Hello World!
  */
-export const decodeBase85 = (input: string): string => {
+export function decodeBase85(input: string): string {
   // Define constants and variables
   const ASCII_OFFSET = 33;
   const BASE85_BLOCK_SIZE = 5;
@@ -58,4 +58,4 @@ export const decodeBase85 = (input: string): string => {
 
   // Convert the array of decoded bytes to a string and return it
   return String.fromCharCode(...decodedBytes);
-};
+}

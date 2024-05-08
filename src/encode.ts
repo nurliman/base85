@@ -22,7 +22,7 @@ export type EncodeOptions = {
  * base85.encode("Hello World!", { wrap: false });
  * // output: 87cURD]i,"Ebo80
  */
-export const encodeBase85 = (input: string, { wrap = true }: EncodeOptions = {}): string => {
+export function encodeBase85(input: string, { wrap = true }: EncodeOptions = {}): string {
   if (!input) return wrap ? "<~~>" : "";
 
   const paddingLength = input.length % 4 || 4;
@@ -60,4 +60,4 @@ export const encodeBase85 = (input: string, { wrap = true }: EncodeOptions = {})
   const output = wrap ? `<~${encodedString}~>` : encodedString;
 
   return output;
-};
+}
