@@ -52,6 +52,7 @@
     "lint-staged": "lint-staged",
     "changeset": "changeset",
     "version-packages": "changeset version",
+    "sync-deno-version": "node ./scripts/syncDenoVersion.js",
     "release": "npm run build:prod && npm run test && changeset publish",
     "prepare": "lefthook install"
   },

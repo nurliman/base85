@@ -1,0 +1,17 @@
+{
+  "$schema": "https://deno.land/x/deno/cli/schemas/config-file.v1.json",
+  "name": "@nurliman/base85",
+  "exports": {
+    ".": "./src/index.ts",
+    "./encode": "./src/encode.ts",
+    "./decode": "./src/decode.ts"
+  },
+  "publish": {
+    "include": [
+      "src/**/*.ts",
+      "README.md",
+      "LICENSE",
+      "deno.json"
+    ]
+  }
+}

@@ -50,3 +50,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Sync deno version
+        if: steps.changesets.outputs.published == 'true'
+        run: pnpm run sync-deno-version
+
+      - name: Publish to JSR
+        if: steps.changesets.outputs.published == 'true'
+        run: pnpm dlx jsr publish
