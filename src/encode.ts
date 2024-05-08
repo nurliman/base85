@@ -15,7 +15,7 @@ export type EncodeOptions = {
  * @param input The string to encode
  * @param {Object} options Options for encoding
  * @param {boolean} [options.wrap=true] If true, the encoded string will be wrapped in `<~` and `~>`. default is `true`
- * @returns The encoded string
+ * @returns {string} The encoded string
  *
  * ```ts
  * import base85 from "@nurliman/base85";
