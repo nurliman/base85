@@ -28,9 +28,7 @@
     "browser",
     "node"
   ],
-  "files": [
-    "dist/"
-  ],
+  "files": ["dist/"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "exports": {
@@ -43,8 +41,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "build:prod": "npm run build -- --minify",
-    "prebuild:prod": "npm run check && npm run lint:fix",
+    "prebuild": "npm run check && npm run lint:fix",
     "test": "bun test",
     "check": "tsc --noEmit",
     "lint": "biome check .",
@@ -54,7 +51,7 @@
     "version-packages": "changeset version",
     "deno:sync-version": "bun ./scripts/syncDenoVersion.ts",
     "deno:publish": "bunx jsr publish --allow-dirty",
-    "release": "npm run build:prod && npm run test && changeset publish",
+    "release": "npm run build && npm run test && changeset publish",
     "prepare": "lefthook install"
   },
   "devDependencies": {
