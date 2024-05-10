@@ -1,5 +1,19 @@
 # @nurliman/base85
 
+## 2.0.8
+
+### Patch Changes
+
+- [`365c46f`](https://github.com/nurliman/base85/commit/365c46fd0d0a75d65215bff1c2389538887b8493) Thanks [@nurliman](https://github.com/nurliman)! - update distributed js to be not minified
+
+- [`42cb223`](https://github.com/nurliman/base85/commit/42cb223aa5ae8cb67aefe51e6d0dae95588e0552) Thanks [@nurliman](https://github.com/nurliman)! - add return type to charCodeArrayToString function
+
+- [`1dfac91`](https://github.com/nurliman/base85/commit/1dfac91ea68ac1375faaff79f6e5c34f22d79023) Thanks [@nurliman](https://github.com/nurliman)! - fix error `String.fromCharCode` on bun
+
+- [`087710a`](https://github.com/nurliman/base85/commit/087710ac487f9ed398c8c4b2fad34ddbfd66f2c7) Thanks [@nurliman](https://github.com/nurliman)! - use bun:test instead of vitest
+
+- [`d2a046c`](https://github.com/nurliman/base85/commit/d2a046c1f379456e4be10b15cb5b2e5b57deb4df) Thanks [@nurliman](https://github.com/nurliman)! - use bun instead of pnpm
+
 ## 2.0.7
 
 ### Patch Changes

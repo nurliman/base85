@@ -1,7 +1,7 @@
 {
   "name": "@nurliman/base85",
   "description": "Browser and Node.js-compatible Base85 encoder/decoder.",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "type": "module",
   "publishConfig": {
     "access": "public"
@@ -28,7 +28,9 @@
     "browser",
     "node"
   ],
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "exports": {
