@@ -17,41 +17,17 @@ jobs:
     outputs:
       published: ${{ steps.changesets.outputs.published }}
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      - uses: oven-sh/setup-bun@v1
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
+      - run: bun install
 
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - uses: actions/cache@v4
-        name: Setup pnpm cache
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Create Release Pull Request or Publish to npm
-        id: changesets
+      - id: changesets
         uses: changesets/action@v1
         with:
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
-          publish: pnpm release
+          publish: bun release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -66,11 +42,11 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
-        
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
 
-      - run: npm run sync-deno-version
+      - uses: oven-sh/setup-bun@v1
 
-      - run: npx jsr publish --allow-dirty
+      - run: bun install
+
+      - run: bun deno:sync-version
+
+      - run: bun deno:publish
