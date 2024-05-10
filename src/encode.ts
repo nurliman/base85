@@ -1,3 +1,5 @@
+import { charCodeArrayToString } from "./utils.ts";
+
 /**
  * `EncodeOptions` is an object that can be passed to the encode function to customize its behavior.
  */
@@ -61,7 +63,7 @@ export function encodeBase85(input: string, { wrap = true }: EncodeOptions = {})
     encodedArray.splice(-paddingCharacters.length);
   }
 
-  const encodedString = String.fromCharCode(...encodedArray);
+  const encodedString = charCodeArrayToString(encodedArray);
   const output = wrap ? `<~${encodedString}~>` : encodedString;
 
   return output;

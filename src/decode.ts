@@ -1,3 +1,5 @@
+import { charCodeArrayToString } from "./utils.ts";
+
 /**
  * Decodes a string from ASCII85
  *
@@ -59,5 +61,5 @@ export function decodeBase85(input: string): string {
   }
 
   // Convert the array of decoded bytes to a string and return it
-  return String.fromCharCode(...decodedBytes);
+  return charCodeArrayToString(decodedBytes);
 }
