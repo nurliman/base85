@@ -1,5 +1,5 @@
+import { expect, test } from "bun:test";
 import fs from "node:fs/promises";
-import { expect, test } from "vitest";
 import base85 from "../src/index.ts";
 
 const [loremIpsumBase85, loremIpsum] = await Promise.all([
