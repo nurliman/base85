@@ -59,16 +59,16 @@
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
     "@changesets/changelog-github": "^0.5.0",
-    "@changesets/cli": "^2.27.1",
+    "@changesets/cli": "^2.27.3",
     "@tsconfig/recommended": "^1.0.6",
     "@types/bun": "latest",
     "@types/node": "^20",
-    "lefthook": "^1.6.10",
-    "lint-staged": "^15.2.2",
+    "lefthook": "^1.6.12",
+    "lint-staged": "^15.2.5",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
-  "packageManager": "bun@1.1.7",
+  "packageManager": "bun@1.1.10",
   "lint-staged": {
     "**/*.+(js|mjs|cjs|jsx|ts|cts|mts|tsx)": "biome check --apply --no-errors-on-unmatched"
   }
