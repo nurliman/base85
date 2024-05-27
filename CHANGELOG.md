@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 2.0.10
+
+### Patch Changes
+
+- [`6ba3c01`](https://github.com/nurliman/base85/commit/6ba3c0160cb1448e179ed3ee17703061f6992f64) Thanks [@nurliman](https://github.com/nurliman)! - bump package version
+
 ## 2.0.9
 
 ### Patch Changes
