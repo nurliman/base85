@@ -1,5 +1,11 @@
 # @nurliman/base85
 
+## 2.0.9
+
+### Patch Changes
+
+- [`e16e958`](https://github.com/nurliman/base85/commit/e16e9582a11283e059beb9c3487ffdbca99bedb5) Thanks [@nurliman](https://github.com/nurliman)! - update dependencies
+
 ## 2.0.8
 
 ### Patch Changes
