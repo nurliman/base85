@@ -47,7 +47,7 @@
     "test": "bun test",
     "check": "tsc --noEmit",
     "lint": "biome check .",
-    "lint:fix": "biome check . --apply",
+    "lint:fix": "biome check . --write",
     "lint-staged": "lint-staged",
     "changeset": "changeset",
     "version-packages": "changeset version",
@@ -70,6 +70,6 @@
   },
   "packageManager": "bun@1.1.18",
   "lint-staged": {
-    "**/*.+(js|mjs|cjs|jsx|ts|cts|mts|tsx)": "biome check --apply --no-errors-on-unmatched"
+    "**/*.+(js|mjs|cjs|jsx|ts|cts|mts|tsx)": "biome check --write --no-errors-on-unmatched"
   }
 }
