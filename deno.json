@@ -7,11 +7,6 @@
     "./decode": "./src/decode.ts"
   },
   "publish": {
-    "include": [
-      "src/**/*.ts",
-      "README.md",
-      "LICENSE",
-      "deno.json"
-    ]
+    "include": ["src/**/*.ts", "README.md", "LICENSE", "deno.json"]
   }
 }

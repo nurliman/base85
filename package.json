@@ -28,9 +28,7 @@
     "browser",
     "node"
   ],
-  "files": [
-    "dist/"
-  ],
+  "files": ["dist/"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "exports": {
