@@ -1,5 +1,15 @@
 # @nurliman/base85
 
+## 2.0.11
+
+### Patch Changes
+
+- [`154bb36`](https://github.com/nurliman/base85/commit/154bb36e5fa55e5435addf0479b7d87bf81355dd) Thanks [@nurliman](https://github.com/nurliman)! - format code
+
+- [`2f8fafb`](https://github.com/nurliman/base85/commit/2f8fafbfcf7ff3bc703468911524b953856f25a0) Thanks [@nurliman](https://github.com/nurliman)! - update dependencies
+
+- [`d8d287b`](https://github.com/nurliman/base85/commit/d8d287b5c28aa459f3ae55c64ad76ccc3862bde1) Thanks [@nurliman](https://github.com/nurliman)! - update linting command to use --write instead of --apply
+
 ## 2.0.10
 
 ### Patch Changes
