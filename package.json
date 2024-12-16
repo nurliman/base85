@@ -71,5 +71,8 @@
   "packageManager": "bun@1.1.38",
   "lint-staged": {
     "**/*.+(js|mjs|cjs|jsx|ts|cts|mts|tsx)": "biome check --write --no-errors-on-unmatched"
-  }
+  },
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
 }
