@@ -1,5 +1,13 @@
 # @nurliman/base85
 
+## 2.0.12
+
+### Patch Changes
+
+- [`19169fa`](https://github.com/nurliman/base85/commit/19169fa378dc54a62cf08508266981f5e3431c80) Thanks [@nurliman](https://github.com/nurliman)! - update dependencies
+
+- [`1b0d1b8`](https://github.com/nurliman/base85/commit/1b0d1b89c9393d2747869edb94b0c18a715d9f5a) Thanks [@nurliman](https://github.com/nurliman)! - add trustedDependencies for `@biomejs/biome` in `package.json`
+
 ## 2.0.11
 
 ### Patch Changes
